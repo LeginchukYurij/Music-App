@@ -51,6 +51,7 @@ const playerSlice = createSlice({
     },
 
     playPause: (state, action) => {
+      console.log(action.payload)
       state.isPlaying = action.payload;
     },
 
