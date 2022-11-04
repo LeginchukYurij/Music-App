@@ -20,8 +20,8 @@ const SongDetails = () => {
         dispatch(playPause(true));
     }
 
-    if (isFetchingSongDetails || isFetchingRelatedSongs) <Loader title="Searching song details" />;
-    if (error) <Error />
+    if (isFetchingSongDetails || isFetchingRelatedSongs) return <Loader title="Searching song details" />;
+    if (error) return <Error />
 
     return (
         <div className="flex flex-col">
